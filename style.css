@@ -2,6 +2,7 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
+    
 }
 body{
     width: 100%;
@@ -30,6 +31,7 @@ header{
     align-items: center;
     justify-content: space-between;
 }
+
 .nav-list li{
     display: inline;
     margin-right: 25px;
@@ -49,13 +51,14 @@ header{
 .hero-section .content{
     position: absolute;
     width: 100%;
-    top: 25%;
+    top: 20%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     padding: 20px;
     margin: 0 auto;
+    
 }
 .content h1{
     font-size: 25px;
@@ -63,7 +66,52 @@ header{
 }
 form{
     position: absolute;
-    bottom: 0;
+    bottom: 50%;
+    left: 50%;
+    transform: translateX(-50%);
     background: linear-gradient(to right, rgb(151, 151, 72) , rgb(73, 73, 113));
+    width: 50%;
+}
+
+.search-bar{
     width: 100%;
+    max-width: 700px;
+    background: rgba(255,255,255,0.2);
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    padding: 10px 20px;
+    backdrop-filter: blur(4px) saturate(180%);
+    box-shadow: 10px 0px 10px rgba(0,0,0,0.4);
+
+}
+.search-bar input{
+
+background: transparent;
+flex: 1;
+border: 0;
+outline: none;
+padding: 24px 20px;
+font-size: 20px;
+color: #cac7ff;
+
+}
+::placeholder{
+    color: #cac7ff;
+
+
+}
+.search-bar button img{
+    width: 25px;
+
+
+}
+.search-bar button{
+    border: 0;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    background: #58629b;
+    cursor: pointer;
+
 }
