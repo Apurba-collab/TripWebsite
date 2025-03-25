@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: url('background.jpeg') no-repeat center center/cover; /* Add your image here */
+        }
+
+        .container {
+            background: rgba(227, 194, 226, 0.179);
+            padding: 20px;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+            width: 350px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(64, 41, 71, 0.27);
+        }
+
+        h2 {
+            color: rgb(243, 243, 247);
+            margin-bottom: 20px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            outline: none;
+            border-radius: 15px;
+            background: rgba(255, 255, 255, 0.3);
+            color: white;
+        }
+
+        input::placeholder {
+            color: white;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background: rgb(87, 58, 203);
+            color: white;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 10px 0;
+        }
+        .btn:hover {
+            background: linear-gradient(to bottom, #f99090, #1005e9);
+            
+        }
+
+        .register {
+            margin-top: 10px;
+            color: white;
+            font-size: 14px;
+        }
+
+        .register a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .register a:hover {
+            text-decoration: underline;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Login Form</h2>
+        <form onsubmit="return loginUser(event)">
+            <input type="email" id="email" placeholder="Enter your email" required>
+            <input type="password" id="password" placeholder="Enter your password" required>
+            <button type="submit" class="btn">Log In</button>
+        </form>
+        <p class="register">Don't have an account? 
+            <a href="signup.html">Sign Up </a>  <!-- Update with your Sign-Up page link -->
+        </p>
+    </div>
+
+</body>
+</html>

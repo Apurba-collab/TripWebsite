@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        header {
+            background-color: purple;
+            color: white;
+            text-align: center;
+            padding: 0.1px 0;
+        }
+        .nav-bar {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 10px;
+            background-color: #f1f1f1;
+            margin-top: 20px; /* Add margin-top to create space between header and nav */
+        }
+        .nav-item {
+            flex: 1 1 200px; /* Adjust flex-basis to control the minimum width */
+            text-align: center;
+            padding: 10px;
+            box-sizing: border-box; /* Include padding in width calculation */
+        }
+        .nav-item h2 {
+            background-color: purple;
+            color: white;
+            padding: 10px;
+            margin-bottom: 10px; /* Add separation between headings */
+            border-radius: 10px; /* Rounded edges for headings */
+        }
+        .nav-item input,
+        .nav-item select {
+            width: 80%;
+            padding: 5px;
+            margin-top: 10px;
+            margin-bottom: 20px; /* Add separation between inputs */
+            border-radius: 10px; /* Rounded edges for inputs and selects */
+            border: 1px solid #ccc; /* Add a border for better visibility */
+        }
+        .search-btn {
+            width: 100%;
+            text-align: center;
+            margin: 20px 0; /* Add margin for separation */
+        }
+        .search-btn button {
+            padding: 10px 20px;
+            background-color: purple;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 10px; /* Rounded edges for the */
+        }
+        @media only screen and (max-width: 369px) {
+    header {
+        background-color: purple;
+        color: white;
+        text-align: center;
+        padding: 5px 0; /* Adjusted padding for header */
+    }
+    header h1 {
+        font-size: 14px; /* Reduced font size for header text */
+        margin: 0; /* Removed margin */
+    }
+    .nav-bar {
+        display: flex;
+        flex-wrap: nowrap; /* Prevent wrapping */
+        justify-content: space-around; /* Space items evenly */
+        padding: 2px; /* Further reduced padding */
+        background-color: #f1f1f1;
+        margin-top: 5px; /* Further reduced margin-top */
+    }
+    .nav-item {
+        flex: 1 1 auto; /* Allow items to shrink and fit */
+        text-align: center;
+        padding: 2px; /* Further reduced padding */
+        box-sizing: border-box; /* Include padding in width calculation */
+        
+    }
+    .nav-item h2 {
+        background-color: purple;
+        color: white;
+        padding: 3px; /* Further reduced padding */
+        margin-bottom: 3px; /* Further reduced margin-bottom */
+        font-size: 9px; /* Further reduced font size */
+    }
+    .nav-item input,
+    .nav-item select {
+        width: 100%; /* Full width */
+        padding: 0.1px; /* Further reduced padding */
+        margin-top: 3px; /* Further reduced margin-top */
+        margin-bottom: 3px; /* Further reduced margin-bottom */
+        border-radius: 3px; /* Further rounded edges */
+        border: 1px solid #ccc; /* Add a border for better visibility */
+        font-size: 7px; /* Further reduced font size */
+    }
+    .search-btn {
+        width: 100%;
+        text-align: center;
+        margin: 20px 0; /* Further reduced margin for separation */
+    }
+    .search-btn button {
+        padding: 5px 5px; /* Further reduced padding */
+        background-color: purple;
+        color: white;
+        border: none;
+        cursor: pointer;
+        border-radius: 3px; /* Further rounded edges */
+        font-size: 10px; /* Further reduced font size */
+    }
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Hotel</h1>
+    </header>
+    <nav class="nav-bar">
+        <div class="nav-item">
+            <h2>City</h2>
+            <select>
+                <option value="kolkata">Kolkata</option>
+                <option value="darjeeling">Darjeeling</option>
+                <option value="average">Howrah</option>
+                <option value="mid-range">Midnapur</option>
+                <option value="luxury">Maldah</option>
+                <option value="luxury">Bardhaman</option>
+            </select>
+        </div>
+        <div class="nav-item">
+            <h2>Check-in</h2>
+            <input type="date">
+        </div>
+        <div class="nav-item">
+            <h2>Check-out</h2>
+            <input type="date">
+        </div>
+        <div class="nav-item">
+            <h2>Rooms</h2>
+            <input type="number" placeholder="Number of Rooms">
+        </div>
+        <div class="nav-item">
+            <h2>Price</h2>
+            <select>
+                <option value="budget">below 10000</option>
+                <option value="below-average">10000-20000</option>
+                <option value="average">20000-30000</option>
+                <option value="mid-range">30000-40000</option>
+                <option value="luxury">50000-60000</option>
+                <option value="luxury">above 60000</option>
+            </select>
+        </div>
+        <div class="nav-item">
+            <h2>Filter</h2>
+            <select>
+                <option value="none">No Filter</option>
+                <option value="free_wifi">Free WiFi</option>
+                <option value="pool">Pool</option>
+                <option value="pet_friendly">Pet Friendly</option>
+            </select>
+        </div>
+        
+    </nav>
+    <div class="search-btn">
+        <button>Search</button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service_Section</title>
+    <style>
+     
+.umbrella-buttons {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color:#fff;
+  padding: 20px;
+  border-radius: 10px 10px 0 0;
+  box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.1);
+  
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.umbrella-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: blue;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+  
+}
+
+.umbrella-button:hover {
+    background: linear-gradient(to bottom, #f99090, #1005e9);
+    transform: scale(1.1);
+}
+
+.umbrella-button img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+.umbrella-button span {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+
+    </style>
+</head>
+<body>
+    <section class="umbrella-buttons">
+        <div class="button-container">
+          <a href="#service" class="umbrella-button">
+            <img src="hotel1.png" alt="Hotel">
+            <span>Hotel</span>
+          </a>
+          <a href="#service" class="umbrella-button">
+            <img src="resturant.png" alt="Restaurant">
+            <span>Restaurant</span>
+          </a>
+          <a href="#service" class="umbrella-button">
+            <img src="car.png" alt="Car">
+            <span>Car</span>
+          </a>
+          <a href="#service" class="umbrella-button">
+            <img src="package.png" alt="Packages">
+            <span>Packages</span>
+          </a>
+        </div>
+      </section>
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zigzag Article Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 0 15px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            line-height: 1.6;
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .content img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .zigzag-img-left {
+            float: left;
+            margin-right: 20px;
+        }
+
+        .zigzag-img-right {
+            float: right;
+            margin-left: 20px;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Add responsiveness */
+        @media (max-width: 768px) {
+            .zigzag-img-left, .zigzag-img-right {
+                float: none;
+                margin: 10px auto;
+                display: block;
+                width: 100%;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>My Zigzag Article Layout</h1>
+</header>
+
+<div class="container">
+    <article class="content">
+        <h1>Introduction to Zigzag Layout</h1>
+        <p>
+            In this article, we will explore a zigzag layout for placing images within a basic article structure.
+            This layout uses alternating left and right floating images to create an interesting design effect.
+        </p>
+        <img src="D1.jpeg" class="zigzag-img-left" alt="Sample Image 1">
+        <p>
+            The zigzag effect is achieved by floating images to the left or right of the text. This helps break the
+            monotony of regular text layouts, making the content more engaging.
+        </p>
+        <img src="D2.jpeg" class="zigzag-img-right" alt="Sample Image 2">
+        <p>
+            This kind of layout is ideal for articles, blog posts, and any content where images complement the text
+            to create a dynamic reading experience.
+        </p>
+        <div class="clear"></div>
+        <img src="D3.jpeg" class="zigzag-img-left" alt="Sample Image 3">
+        <p>
+            Experimenting with the placement of images is a fun way to enhance your website's design. You can also use
+            this zigzag pattern with various media types to make the layout visually appealing.
+        </p>
+    </article>
+</div>
+
+
+
+</body>
+</html>
